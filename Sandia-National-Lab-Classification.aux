@@ -3,42 +3,57 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \citation{databreachreport}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
 \citation{traditionalnids}
 \citation{anomalyissues}
 \citation{neuralnids}
 \citation{bert}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{landauer2022ait}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Methodology}{2}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}System Overview}{2}{subsection.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Data Preparation}{3}{subsection.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Dataset Description}{3}{subsubsection.3.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Data Profiling and Label Consolidation}{3}{subsubsection.3.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Exploratory Data Analysis (EDA)}{3}{subsubsection.3.2.3}\protected@file@percent }
-\citation{distilbert}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Distribution of Log Line Lengths by Classification}}{4}{figure.caption.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}The Data}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Data Source}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Data Imbalance}{2}{subsection.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Label Counts (Log-Scaled X-Axis)}}{2}{figure.caption.1}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:linelength}{{1}{4}{Distribution of Log Line Lengths by Classification}{figure.caption.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Model Development}{4}{subsection.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}BERT Tokenizer Customization}{4}{subsubsection.3.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Model Training}{4}{subsubsection.3.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}Baseline Models}{5}{subsubsection.3.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{5}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Model Performance}{5}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Analysis}{5}{subsection.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Challenges and Solutions}{5}{subsection.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Implementation}{6}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Full-Stack Framework}{6}{subsection.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Deployment}{6}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{6}{section.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Impact and Benefits}{6}{subsection.6.1}\protected@file@percent }
-\bibcite{databreachreport}{1}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Cost Analysis}{7}{subsection.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Limitations and Future Work}{7}{subsection.6.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{7}{section.7}\protected@file@percent }
-\bibcite{traditionalnids}{2}
-\bibcite{anomalyissues}{3}
-\bibcite{neuralnids}{4}
-\bibcite{bert}{5}
-\bibcite{distilbert}{6}
-\gdef \@abspage@last{8}
+\newlabel{fig:label_counts}{{1}{2}{Label Counts (Log-Scaled X-Axis)}{figure.caption.1}{}}
+\citation{sanh2019distilbert}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Data Profiling and Label Consolidation}{3}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Methodology}{3}{section.4}\protected@file@percent }
+\newlabel{sec:methodology}{{4}{3}{Methodology}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Model Selection}{3}{subsection.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces DistilBERT Architecture}}{3}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:distil_bert}{{2}{3}{DistilBERT Architecture}{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Model Training}{3}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Classification Strategy}{3}{subsection.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Logit Sensitivity Thresholding}}{4}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:logit_sensitivity}{{3}{4}{Logit Sensitivity Thresholding}{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{4}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Model Performance}{4}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Evaluation Metrics}{4}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Analysis}{4}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Implementation}{4}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Model Hosting}{4}{subsection.6.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Average Confusion Matrix from 5-Fold Cross-Validation}}{5}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:confusion_matrix}{{4}{5}{Average Confusion Matrix from 5-Fold Cross-Validation}{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Full-Stack Framework}{6}{subsection.6.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces NLP Framework for Network Intrusion Detection}}{6}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:insyt_package}{{5}{6}{NLP Framework for Network Intrusion Detection}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}Workflow}{6}{subsubsection.6.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}User Interface}{6}{subsection.6.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces React Frontend for Network Intrusion Detection}}{7}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:react}{{6}{7}{React Frontend for Network Intrusion Detection}{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{7}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Impact and Benefits}{7}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Challenges}{7}{subsection.7.2}\protected@file@percent }
+\bibstyle{plainnat}
+\bibcite{databreachreport}{{1}{}{{}}{{}}}
+\bibcite{traditionalnids}{{2}{}{{}}{{}}}
+\bibcite{anomalyissues}{{3}{}{{}}{{}}}
+\bibcite{neuralnids}{{4}{}{{}}{{}}}
+\bibcite{bert}{{5}{}{{}}{{}}}
+\bibcite{sanh2019distilbert}{{6}{}{{}}{{}}}
+\bibcite{landauer2022ait}{{7}{}{{}}{{}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Future Work}{8}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{8}{section.8}\protected@file@percent }
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\gdef \@abspage@last{9}
